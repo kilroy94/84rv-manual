@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
 
 .manual {
@@ -58,7 +58,7 @@ body {
 .section-title {
   margin: 22px 0 16px;
   text-align: center;
-  color: var(--ink);
+  color: var(--title-blue);
   font-size: 27pt;
   line-height: 1.05;
   text-decoration: underline;
