@@ -1,5 +1,6 @@
 :root {
   --ink: #18384a;
+  --title-blue: #174f5f;
   --ink-soft: #31586a;
   --accent: #f06f2f;
   --accent-soft: #f4a47d;
@@ -16,7 +17,6 @@
   --radius-lg: 18px;
   --radius-md: 12px;
   --radius-sm: 8px;
-  --shadow-soft: 0 3px 8px rgb(0 0 0 / 14%);
-  --font-serif: Georgia, "Times New Roman", serif;
-  --font-sans: Arial, Helvetica, sans-serif;
+  --shadow-soft: 0 4px 10px rgb(0 0 0 / 20%);
+  --font-sans: Aptos, "Segoe UI", Arial, Helvetica, sans-serif;
 }
