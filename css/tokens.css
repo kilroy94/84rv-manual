@@ -1,0 +1,22 @@
+:root {
+  --ink: #18384a;
+  --ink-soft: #31586a;
+  --accent: #f06f2f;
+  --accent-soft: #f4a47d;
+  --tip: #f5ef97;
+  --danger: #ef4a43;
+  --paper: #ffffff;
+  --muted: #eef3f5;
+  --rule: #7ea3b4;
+  --text: #1e2529;
+  --page-width: 8.5in;
+  --page-height: 11in;
+  --page-pad-x: 0.55in;
+  --page-pad-y: 0.45in;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --shadow-soft: 0 3px 8px rgb(0 0 0 / 14%);
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
