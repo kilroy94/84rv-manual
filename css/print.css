@@ -1,0 +1,51 @@
+@page {
+  size: Letter;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 8.5in;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  .manual {
+    display: block;
+    padding: 0;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    min-height: 11in;
+    margin: 0;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .callout,
+  .procedure,
+  .step,
+  .troubleshooting,
+  .troubleshooting-row,
+  .photo-frame,
+  .warning-panel,
+  .spec-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
