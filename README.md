@@ -65,4 +65,4 @@ The project treats the manual as a publication, not as a conventional web page. 
 - section headers
 - model-specific metadata
 
-The current pages are a starter framework and proof of concept, not the final complete manual.
+The repository now contains a first-pass conversion of the original 24’ 6 Series Sunseeker manual. The original manual remains the content source of truth. Some source photographs/maps still need to be migrated into repository assets, and editorial cleanup is intentionally deferred to a separate review pass.\n\nAfter editing modular content, run `node build.js` to regenerate `index.html`.
