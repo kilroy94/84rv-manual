@@ -44,7 +44,7 @@
   display: grid;
   place-items: center;
   padding: 10px 6px;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 700;
   font-size: 15pt;
 }
@@ -226,3 +226,31 @@
 .page h2 { color:var(--ink); font-size:18pt; margin:18px 0 8px; }
 .page p, .page li { line-height:1.35; }
 .page ol, .page ul { font-size:12pt; }
+
+
+/* Publication surface treatment */
+.spec-card,
+.callout,
+.step-body,
+.photo-frame,
+.troubleshooting-head .cell,
+.troubleshooting-row .cell,
+.warning-panel,
+.highlight {
+  border: 1px solid rgb(24 56 74 / 28%);
+  box-shadow: var(--shadow-soft);
+}
+
+.page h2 {
+  text-align: center;
+  color: var(--title-blue);
+}
+
+.callout.unlabeled {
+  display: block;
+}
+
+.callout.unlabeled .callout-body {
+  padding: 16px 20px;
+  text-align: center;
+}
