@@ -389,3 +389,16 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+
+/* Subtle raised text treatment used by informational callouts */
+.callout.tip .callout-label,
+.callout.tip .callout-body {
+  text-shadow: 0 1px 1px rgb(255 255 255 / 55%),
+               0 1px 2px rgb(0 0 0 / 16%);
+}
+
+.callout.fact .callout-label,
+.callout.fact .callout-body {
+  text-shadow: 0 1px 2px rgb(0 0 0 / 32%);
+}
