@@ -402,3 +402,93 @@
 .callout.fact .callout-body {
   text-shadow: 0 1px 2px rgb(0 0 0 / 32%);
 }
+
+
+/* Thermostat page composition */
+.thermostat-procedure {
+  display: grid;
+  gap: 7px;
+  margin: 8px 0 14px;
+}
+
+.icon-step {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  align-items: center;
+}
+
+.icon-arrow {
+  position: relative;
+  z-index: 1;
+  height: 52px;
+  margin-right: -6px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#f58b4d, #ef6c2c);
+  clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
+  filter: drop-shadow(0 3px 3px rgb(0 0 0 / 28%));
+}
+
+.icon-arrow img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.icon-step .step-body {
+  min-height: 52px;
+  padding: 9px 16px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 2px solid var(--title-blue);
+  box-shadow: none;
+  font-size: 11.5pt;
+}
+
+.thermostat-figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  max-width: 82%;
+  margin: 14px auto 8px;
+}
+
+.thermostat-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.thermostat-figure img {
+  width: 100%;
+  aspect-ratio: 1.14 / 1;
+  object-fit: cover;
+  border: 1px solid #888;
+}
+
+.thermostat-figure::after {
+  content: "";
+  display: block;
+  width: 96%;
+  height: 3px;
+  margin: 6px auto 3px;
+  background: var(--title-blue);
+}
+
+.thermostat-figure figcaption {
+  color: var(--title-blue);
+  font-size: 9.5pt;
+  font-style: italic;
+}
+
+.thermostat-callout {
+  margin-top: 7px;
+  min-height: 54px;
+}
+
+.thermostat-callout .callout-body {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  font-size: 11pt;
+}
