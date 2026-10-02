@@ -287,3 +287,18 @@
 .callout.unlabeled .callout-label::after {
   display: none;
 }
+
+
+.context-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.callout-body.with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
