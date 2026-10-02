@@ -148,7 +148,7 @@
 .troubleshooting-head .cell {
   padding: 12px 8px;
   border-radius: 12px;
-  background: var(--accent-soft);
+  background: var(--troubleshooting);
   color: white;
   text-align: center;
   font-size: 17pt;
