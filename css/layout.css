@@ -47,12 +47,29 @@ body {
 
 .page-footer {
   position: absolute;
-  left: var(--page-pad-x);
   right: var(--page-pad-x);
   bottom: 0.17in;
-  text-align: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 8px;
+  color: var(--text);
+  text-align: right;
   font-family: var(--font-sans);
   font-size: 9pt;
+}
+
+.page-footer .page-number {
+  font-size: 11pt;
+  font-weight: 700;
+}
+
+.page-footer .section-name {
+  font-weight: 600;
+}
+
+.page-footer .footer-separator {
+  color: var(--title-blue);
 }
 
 .section-title {
