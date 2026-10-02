@@ -105,11 +105,10 @@
   text-shadow: 0 1px 1px rgb(0 0 0 / 25%);
 }
 
-.step-body {
-  display: flex;
-  align-items: center;
+ .step-body {
+  display: block;
   min-height: 56px;
-  padding: 9px 16px;
+  padding: 16px;
   border: 2px solid var(--ink-soft);
   border-radius: 10px;
   font-size: 13.5pt;
@@ -296,11 +295,19 @@
   flex: 0 0 auto;
 }
 
-.callout-body.with-icon {
+.callout-body.with-icon,
+.step-body.with-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
+}
+
+.callout-body.with-icon {
+  justify-content: center;
+}
+
+.step-body.with-icon {
+  justify-content: flex-start;
 }
 
 
