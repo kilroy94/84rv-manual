@@ -254,3 +254,36 @@
   padding: 16px 20px;
   text-align: center;
 }
+
+
+/* Reusable callout icon system */
+.callout.tip .callout-label::after,
+.callout.fact .callout-label::after,
+.callout.warning .callout-label::after,
+.callout.important .callout-label::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.callout.tip .callout-label::after {
+  background-image: url("../assets/icons/tip-lightbulb.png");
+}
+
+.callout.fact .callout-label::after {
+  background-image: url("../assets/icons/fact-check.png");
+}
+
+.callout.warning .callout-label::after,
+.callout.important .callout-label::after {
+  background-image: url("../assets/icons/warning.png");
+}
+
+.callout.unlabeled .callout-label::after {
+  display: none;
+}
