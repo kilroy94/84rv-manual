@@ -302,3 +302,83 @@
   justify-content: center;
   gap: 10px;
 }
+
+
+/* After-hours return page */
+.return-page .return-intro {
+  max-width: 92%;
+  margin: 0 auto 24px;
+  font-size: 16pt;
+}
+
+.return-instructions {
+  display: grid;
+  grid-template-columns: 1.55fr 0.85fr;
+  gap: 14px;
+  align-items: center;
+  margin: 8px 0 22px;
+}
+
+.return-instructions .procedure {
+  margin: 0;
+}
+
+.return-instructions .step-body {
+  justify-content: center;
+  text-align: center;
+}
+
+.return-photo {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.return-photo img {
+  width: 100%;
+  height: 100%;
+  max-height: 2.45in;
+  object-fit: cover;
+}
+
+.warning-with-icons {
+  display: grid;
+  grid-template-columns: 54px 1fr 54px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+
+.warning-with-icons img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 22%));
+}
+
+.warning-with-icons h3 {
+  font-size: 15pt;
+  margin: 2px 0;
+}
+
+.section-divider {
+  height: 2px;
+  margin: 24px 0 20px;
+  background: var(--title-blue);
+}
+
+.return-deadline {
+  display: grid;
+  gap: 10px;
+}
+
+.return-deadline p {
+  margin: 0;
+}
+
+.return-time {
+  font-size: 22pt;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
