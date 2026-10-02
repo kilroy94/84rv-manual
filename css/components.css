@@ -876,3 +876,26 @@
   content: none;
   display: none;
 }
+
+
+/* Extend shadowed A/C arrows into instruction boxes */
+.ac-setup-row .step-arrow-shadow {
+  width: 66px;
+  height: 54px;
+  margin-right: 0;
+  overflow: visible;
+}
+
+.ac-setup-row .step-arrow-shadow .step-number {
+  position: relative;
+  z-index: 3;
+  width: 78px;
+  height: 54px;
+  min-height: 54px;
+}
+
+.ac-setup-row > .step-body {
+  position: relative;
+  z-index: 1;
+  padding-left: 24px;
+}
