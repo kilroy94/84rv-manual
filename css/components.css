@@ -525,3 +525,118 @@
   padding: 16px 86px;
   text-align: center;
 }
+
+
+/* A/C troubleshooting page */
+.ac-page .section-title {
+  margin-bottom: 12px;
+}
+
+.ac-callout {
+  min-height: 62px;
+  margin-top: 7px;
+}
+
+.ac-callout .callout-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 11.5pt;
+}
+
+.microwave-tip {
+  position: relative;
+  grid-template-columns: 74px 1fr 52px;
+}
+
+.callout-end-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.ac-setup {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 8px;
+}
+
+.ac-setup-row {
+  display: grid;
+  grid-template-columns: 66px 1fr 150px;
+  align-items: stretch;
+}
+
+.ac-setup-row .step-number {
+  min-height: 54px;
+  margin-right: -3px;
+  z-index: 1;
+}
+
+.ac-setup-row > .step-body {
+  min-height: 54px;
+  display: grid;
+  place-items: center;
+  padding: 7px 12px;
+  border: 2px solid var(--title-blue);
+  box-shadow: none;
+  text-align: center;
+  font-size: 10.5pt;
+}
+
+.ac-setup-row .step-text {
+  width: 100%;
+  line-height: 1.3;
+}
+
+.ac-side-tip {
+  margin-left: 6px;
+  grid-template-columns: 48px 1fr;
+  border-radius: 9px;
+  box-shadow: none;
+}
+
+.ac-side-tip .callout-label {
+  padding: 5px 2px;
+  font-size: 11pt;
+}
+
+.ac-side-tip .callout-label::after {
+  width: 18px;
+  height: 18px;
+}
+
+.ac-side-tip .callout-body {
+  padding: 6px 7px 6px 0;
+  text-align: center;
+  font-size: 8.5pt;
+  line-height: 1.2;
+}
+
+.ac-vent-tip {
+  min-height: 48px;
+  margin-top: 8px;
+}
+
+.ac-vent-tip .callout-body {
+  text-align: center;
+  font-size: 11.5pt;
+}
+
+.ac-troubleshooting {
+  margin-top: 20px;
+}
+
+.ac-troubleshooting .troubleshooting-head .cell {
+  height: 62px;
+  min-height: 62px;
+  display: grid;
+  place-items: center;
+  padding: 8px 10px;
+  line-height: 1.15;
+}
+
+.ac-troubleshooting .troubleshooting-row .cell {
+  min-height: 52px;
+}
