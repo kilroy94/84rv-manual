@@ -272,11 +272,11 @@
 }
 
 .callout.tip .callout-label::after {
-  background-image: url("../assets/icons/tip-lightbulb.png");
+  background-image: url("../assets/icons/tip-lightbulb.svg");
 }
 
 .callout.fact .callout-label::after {
-  background-image: url("../assets/icons/fact-check.png");
+  background-image: url("../assets/icons/fact-check.svg");
 }
 
 .callout.warning .callout-label::after,
