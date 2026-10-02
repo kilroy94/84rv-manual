@@ -503,3 +503,25 @@
 .swing-wide-callout .callout-body {
   text-align: center;
 }
+
+
+/* Center Swing Wide against the full callout, not the body column */
+.swing-wide-callout {
+  position: relative;
+  display: block;
+}
+
+.swing-wide-callout .callout-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 74px;
+  z-index: 1;
+}
+
+.swing-wide-callout .callout-body {
+  width: 100%;
+  padding: 16px 86px;
+  text-align: center;
+}
