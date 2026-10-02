@@ -103,6 +103,7 @@
   font-weight: 700;
   clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
   text-shadow: 0 1px 1px rgb(0 0 0 / 25%);
+  filter: drop-shadow(0 3px 3px rgb(0 0 0 / 28%));
 }
 
  .step-body {
@@ -564,21 +565,24 @@
 
 .ac-setup-row {
   display: grid;
-  grid-template-columns: 66px 1fr 150px;
-  align-items: stretch;
+  grid-template-columns: 66px minmax(0, 1fr) 190px;
+  align-items: center;
 }
 
 .ac-setup-row .step-number {
+  height: 54px;
   min-height: 54px;
   margin-right: -3px;
   z-index: 1;
 }
 
 .ac-setup-row > .step-body {
+  height: 54px;
   min-height: 54px;
-  display: grid;
-  place-items: center;
-  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
   border: 2px solid var(--title-blue);
   box-shadow: none;
   text-align: center;
@@ -591,6 +595,8 @@
 }
 
 .ac-side-tip {
+  height: 54px;
+  min-height: 54px;
   margin-left: 6px;
   grid-template-columns: 48px 1fr;
   border-radius: 9px;
@@ -610,8 +616,8 @@
 .ac-side-tip .callout-body {
   padding: 6px 7px 6px 0;
   text-align: center;
-  font-size: 8.5pt;
-  line-height: 1.2;
+  font-size: 9pt;
+  line-height: 1.15;
 }
 
 .ac-vent-tip {
@@ -639,4 +645,15 @@
 
 .ac-troubleshooting .troubleshooting-row .cell {
   min-height: 52px;
+}
+
+
+.ac-troubleshooting .troubleshooting-head .cell {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ac-troubleshooting .troubleshooting-head .cell br {
+  line-height: 1.15;
 }
