@@ -783,3 +783,39 @@
   line-height: 1.12;
   text-align: center;
 }
+
+
+/* Final arrow shadow implementation: shadow the wrapper, clip only the orange fill */
+.ac-setup-row .step-number {
+  position: relative;
+  width: 66px;
+  height: 54px;
+  margin-right: -12px;
+  overflow: visible;
+  clip-path: none;
+  background: transparent;
+  filter: none;
+  box-shadow: none;
+  isolation: auto;
+}
+
+.ac-setup-row .step-number::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: transparent;
+  clip-path: none;
+  filter: none;
+  box-shadow: 3px 4px 6px rgb(0 0 0 / 32%);
+  border-radius: 2px;
+}
+
+.ac-setup-row .step-number::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(#f58b4d, #ef6c2c);
+  clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
+}
