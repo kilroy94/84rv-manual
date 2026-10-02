@@ -706,3 +706,80 @@
   line-height: 1.15;
   text-align: center;
 }
+
+
+/* Definitive A/C row layout */
+.ac-setup-row {
+  grid-template-columns: 66px minmax(0, 1fr) 190px;
+  align-items: center;
+}
+
+.ac-setup-row .step-number {
+  position: relative;
+  width: 66px;
+  height: 54px;
+  margin-right: -12px;
+  overflow: visible;
+  filter: none;
+  isolation: isolate;
+}
+
+.ac-setup-row .step-number::before {
+  content: "";
+  position: absolute;
+  inset: 4px -5px -5px 4px;
+  z-index: -1;
+  background: rgb(0 0 0 / 28%);
+  clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
+  filter: blur(3px);
+}
+
+.ac-setup-row > .step-body {
+  height: 54px;
+  min-height: 54px;
+  padding: 5px 10px 5px 18px;
+}
+
+.ac-side-tip {
+  height: 54px;
+  min-height: 54px;
+  margin-left: 7px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: center;
+  overflow: hidden;
+}
+
+.ac-side-tip .callout-label {
+  position: static;
+  width: auto;
+  height: 54px;
+  min-height: 54px;
+  align-self: center;
+  display: grid;
+  grid-template-rows: auto 18px;
+  place-items: center;
+  align-content: center;
+  gap: 2px;
+  padding: 0;
+  font-size: 10.5pt;
+  line-height: 1;
+}
+
+.ac-side-tip .callout-label::after {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.ac-side-tip .callout-body {
+  width: auto;
+  height: auto;
+  min-height: 0;
+  align-self: center;
+  display: block;
+  padding: 4px 8px 4px 2px;
+  font-size: 8.5pt;
+  line-height: 1.12;
+  text-align: center;
+}
