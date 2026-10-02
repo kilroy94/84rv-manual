@@ -841,3 +841,38 @@
   content: none;
   display: none;
 }
+
+
+/* Two-layer polygon shadow component */
+.ac-setup-row {
+  grid-template-columns: 66px minmax(0, 1fr) 190px;
+}
+
+.ac-setup-row .step-arrow-shadow {
+  position: relative;
+  z-index: 2;
+  width: 66px;
+  height: 54px;
+  margin-right: -12px;
+  overflow: visible;
+  filter: drop-shadow(3px 4px 4px rgb(0 0 0 / 34%));
+}
+
+.ac-setup-row .step-arrow-shadow .step-number {
+  width: 66px;
+  height: 54px;
+  min-height: 54px;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#f58b4d, #ef6c2c);
+  clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
+  filter: none;
+  box-shadow: none;
+}
+
+.ac-setup-row .step-arrow-shadow .step-number::before,
+.ac-setup-row .step-arrow-shadow .step-number::after {
+  content: none;
+  display: none;
+}
