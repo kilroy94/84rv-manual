@@ -819,3 +819,25 @@
   background: linear-gradient(#f58b4d, #ef6c2c);
   clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
 }
+
+
+/* Polygon-aware procedure arrow shadow */
+.ac-setup-row .step-number {
+  position: relative;
+  z-index: 2;
+  width: 66px;
+  height: 54px;
+  margin-right: -12px;
+  overflow: visible;
+  background: linear-gradient(#f58b4d, #ef6c2c);
+  clip-path: polygon(0 0, 72% 0, 100% 50%, 72% 100%, 0 100%, 16% 50%);
+  box-shadow: none;
+  filter: drop-shadow(3px 4px 4px rgb(0 0 0 / 32%));
+  isolation: auto;
+}
+
+.ac-setup-row .step-number::before,
+.ac-setup-row .step-number::after {
+  content: none;
+  display: none;
+}
