@@ -657,3 +657,52 @@
 .ac-troubleshooting .troubleshooting-head .cell br {
   line-height: 1.15;
 }
+
+
+/* Procedure arrow depth and overlap refinements */
+.step-number {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(3px 4px 3px rgb(0 0 0 / 30%));
+}
+
+.ac-setup-row .step-number {
+  margin-right: -10px;
+}
+
+.ac-setup-row > .step-body {
+  padding-left: 16px;
+}
+
+/* Small A/C TIP cards use explicit vertical centering */
+.ac-side-tip {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: stretch;
+}
+
+.ac-side-tip .callout-label {
+  height: 54px;
+  align-self: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.ac-side-tip .callout-label::after {
+  flex: 0 0 18px;
+  margin-top: 3px;
+}
+
+.ac-side-tip .callout-body {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px 4px 2px;
+  line-height: 1.15;
+  text-align: center;
+}
