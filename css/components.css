@@ -820,3 +820,15 @@
   z-index: 1;
   padding-left: 22px;
 }
+
+
+/* Raised TIP / FACT labels and icons */
+.callout.tip .callout-label,
+.callout.fact .callout-label {
+  text-shadow: 0 2px 2px rgb(0 0 0 / 28%);
+}
+
+.callout.tip .callout-label::after,
+.callout.fact .callout-label::after {
+  filter: drop-shadow(2px 3px 2px rgb(0 0 0 / 32%));
+}
